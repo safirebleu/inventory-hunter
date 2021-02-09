@@ -24,13 +24,13 @@ These steps *should* work on any supported Docker platform, but they have been s
 1. Clone this repository and pull the latest image from [Docker Hub](https://hub.docker.com/r/ericjmarti/inventory-hunter):
     ```
     pi@raspberrypi:~
-    $ git clone https://github.com/EricJMarti/inventory-hunter
+    $ git clone https://github.com/safirebleu/inventory-hunter
 
     pi@raspberrypi:~
     $ cd inventory-hunter
 
     pi@raspberrypi:~/inventory-hunter
-    $ docker pull ericjmarti/inventory-hunter:latest
+    $ docker pull safirebleu/inventory-hunter:latest
     ```
 
 2. Create your own configuration file based on one of the provided examples:
@@ -50,7 +50,7 @@ These steps *should* work on any supported Docker platform, but they have been s
 
     # Discord example:
     pi@raspberrypi:~/inventory-hunter
-    $ ./docker_run.bash -c ./config/newegg_rtx_3070.yaml -a discord -w https://discord.com/api/webhooks/...
+    $ ./docker_run.bash -c ./config/newegg_rtx_3070.yaml -a discord -w https://discord.com/api/webhooks/808523080757674014/UuDkn3YE8-zH23XQGPe0UMmwuy1xA8K6hBFxsZ_GsxFnSY9XMuYOky9H252DRG2DqFwJ
     ```
 
     If using an SMTP relay, the format of your command will look like this:
